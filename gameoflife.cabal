@@ -3,11 +3,11 @@ version:             0.1.0.0
 synopsis:            Initial project template from stack
 description:         Please see README.md
 homepage:            http://github.com/sdemos/gameoflife#readme
-license:             BSD3
+license:             MIT
 license-file:        LICENSE
 author:              Stephen Demos
 maintainer:          stphndemos@gmail.com
-copyright:           2016 Author Here
+copyright:           2016 Stephen Demos
 category:            Web
 build-type:          Simple
 -- extra-source-files:
@@ -15,8 +15,9 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Lib
-  build-depends:       base >= 4.7 && < 5
+  exposed-modules:     Life
+  build-depends:       base
+                     , repa
   default-language:    Haskell2010
 
 executable gameoflife-exe
